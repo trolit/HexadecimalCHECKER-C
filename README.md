@@ -7,3 +7,5 @@ To use it **effectively** you need to overwrite variables in *.c file.
 Description:
 See the result of addition,multiplication, subtraction, division, modulus on hexadecimal variables.
 
+
+Run and open in program for ex. Code Blocks

@@ -58,5 +58,7 @@ printf("Division (/) of \nc=%x \nd=%x\nis %x\n===========================\n", c,
 printf("Subtraction (-) of \ne=%x \nf=%x\nis %x\n===========================\n", e,f,e-f);
 printf("Modulus of \ng=%x \nh=%x\nis %x\n===========================\n", g,h,g%h);
 return 0;
+
+getchar();
 }
 
