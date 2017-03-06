@@ -5,10 +5,11 @@
 
 
 Pick an version you wish to use:
+
 Hexadecimal.CHECKER-C **[v1.0]**
-\
 Availabe language: *ENG*
 Note: To use it **effectively** you need to overwrite variables in *.c file.
+
 Hexadecimal.CHECKER-C **[v2.1]**
 Available language: *ENG*, *PL*
 
