@@ -1,4 +1,4 @@
-/* Welcome to Hex.Checker V2 */
+/* Welcome to Hex.Checker V2.1 */
 /* This is version for lazier counting */
 /* Program will ask you to enter numbers you want to count by addition etc.. */
 /* Made by: Trolit */
@@ -18,6 +18,14 @@ multiplication - "*"
 division - "/"
 subtraction - "-"
 modulus - "%"
+
+v2.0 [05.03.17]
+ *created project
+
+v2.1 [06.03.17]
+ *added third option to mathematical operations. "Perform operation again".
+ *Note only shows in menu instead of in every mathematical operation.
+
 */
 
 #include <stdio.h>
@@ -35,7 +43,7 @@ int checker = 0;
 label:
 
 /* I am introducing myself */
-printf("*********************************************************\n           Hi, I am Hex.Checker v2.0, let me help you. \n           Oh and by the way, check my BIO \n           (check Information folder)\n*********************************************************\n\n\n");
+printf("*********************************************************\n           Hi, I am Hex.Checker v2.1, let me help you. \n           Oh and by the way, check my BIO \n           (check Information folder)\n*********************************************************\n\n\n");
 
 
 
@@ -55,6 +63,7 @@ scanf("%d", &checker);
 
 if (checker == 1)
 {
+    add:
     printf("\n\n***ADDITION***\n\n");
     int x,y;
     printf ("Enter first value\n");
@@ -64,15 +73,17 @@ if (checker == 1)
     printf ("The addition between: %2X and %2X = %2X\n\n\n", x,y,x+y);
 
     int w;
-    printf("Do you want me to move back to the menu of the program? \n1 - YES(Back to the main menu)\n2 - NO(I ended up my work)\n");
+    printf("Do you want me to move back to the menu of the program? \n1 - YES(Back to the main menu)\n2 - NO(I ended up my work)\n3 - I want to perform this operation again. [ADDITION]\n");
     scanf("%i", &w);
 
             if (w == 1) goto label;
             if (w == 2) system("PAUSE");
+            if (w == 3) goto add;
 }
 
 if (checker == 2)
 {
+    mult:
     printf("\n\n***MULTIPLICATION***\n\n");
     int x,y;
     printf ("Enter first value\n");
@@ -82,15 +93,17 @@ if (checker == 2)
     printf ("The multiplication between: %2X and %2X = %2X\n\n\n", x,y,x*y);
 
     int w;
-    printf("Do you want me to move back to the menu of the program? \n1 - YES(Back to the main menu)\n2 - NO(I ended up my work)\n");
+    printf("Do you want me to move back to the menu of the program? \n1 - YES(Back to the main menu)\n2 - NO(I ended up my work)\n3 - I want to perform this operation again. [MULTIPLICATION]\n");
     scanf("%i", &w);
 
             if (w == 1) goto label;
             if (w == 2) system("PAUSE");
+            if (w == 3) goto mult;
 }
 
 if (checker == 3)
 {
+    subtr:
     printf("\n\n***SUBTRACTION***\n\n");
     int x,y;
     printf ("Enter first value\n");
@@ -100,15 +113,17 @@ if (checker == 3)
     printf ("The subtraction between: %2X and %2X = %2X\n\n\n", x,y,x-y);
 
     int w;
-    printf("Do you want me to move back to the menu of the program? \n1 - YES(Back to the main menu)\n2 - NO(I ended up my work)\n");
+    printf("Do you want me to move back to the menu of the program? \n1 - YES(Back to the main menu)\n2 - NO(I ended up my work)\n3 - I want to perform this operation again. [SUBTRACTION]\n");
     scanf("%i", &w);
 
             if (w == 1) goto label;
             if (w == 2) system("PAUSE");
+            if (w == 3) goto subtr;
 }
 
 if (checker == 4)
 {
+    divi:
     printf("\n\n***DIVISION***\n\n");
     int x,y;
     printf ("Enter first value\n");
@@ -118,15 +133,17 @@ if (checker == 4)
     printf ("The division between: %2X and %2X = %2X\n\n\n", x,y,x/y);
 
     int w;
-    printf("Do you want me to move back to the menu of the program? \n1 - YES(Back to the main menu)\n2 - NO(I ended up my work)\n");
+    printf("Do you want me to move back to the menu of the program? \n1 - YES(Back to the main menu)\n2 - NO(I ended up my work)\n3 - I want to perform this operation again. [DIVISION]\n");
     scanf("%i", &w);
 
             if (w == 1) goto label;
             if (w == 2) system("PAUSE");
+            if (w == 3) goto divi;
 }
 
 if (checker == 5)
 {
+    modu:
     printf("\n\n***MODULUS***\n\n");
     int x,y;
     printf ("Enter first value\n");
@@ -136,23 +153,26 @@ if (checker == 5)
     printf ("The modulus between: %2X and %2X = %2X\n\n\n", x,y,x%y);
 
     int w;
-    printf("Do you want me to move back to the menu of the program? \n1 - YES(Back to the main menu)\n2 - NO(I ended up my work)\n");
+    printf("Do you want me to move back to the menu of the program? \n1 - YES(Back to the main menu)\n2 - NO(I ended up my work)\n3 - I want to perform this operation again. [MODULUS]\n");
     scanf("%i", &w);
 
             if (w == 1) goto label;
             if (w == 2) system("PAUSE");
+            if (w == 3) goto modu;
 }
 
 if (checker == 6)
 {
-    printf("\n\n************************************************************************\n");
-    printf("My name is Hex.Checker.V2\n");
-    printf("I was born on 5th March 2017\n");
-    printf("I was written in CodeBlocks by Trolit\n");
-    printf("I am here to help you. I want to show you the results of mathematical operationson"
-           " hexadecimal numbers. You are doing it manually in your note, then you ask me to show"
-           " the correct answer.");
-    printf("\n************************************************************************\n\n\n");
+    printf("\n\n************************************************************************\n*                                                                      *\n");
+    printf("* - Name:               Hex.Checker.V2.1                               *\n");
+    printf("* - Born:               5th March 2017                                 *\n");
+    printf("* - Started from:       v2.0                                           *\n");
+    printf("* - Written by:         Trolit                                         *\n*                                                                      *\n");
+    printf("************************************************************************\n\n");
+    printf("My description:\n");
+    printf("I am here to help you.\nI want to show you the results of mathematical operations on"
+           "hexadecimal numbers.You are doing it manually in your note,\nthen you ask me to show\n"
+           "the correct answer.\n\n");
 
     int w;
     printf("Do you want me to move back to the menu of the program? \n1 - YES(Back to the main menu)\n2 - NO(Enough!)\n");
