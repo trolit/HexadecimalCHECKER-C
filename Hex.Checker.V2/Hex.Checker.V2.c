@@ -30,6 +30,7 @@ v2.1 [06.03.17]
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 
 int main(void)
 {
@@ -43,7 +44,7 @@ int checker = 0;
 label:
 
 /* I am introducing myself */
-printf("*********************************************************\n           Hi, I am Hex.Checker v2.1, let me help you. \n           Oh and by the way, check my BIO \n           (check Information folder)\n*********************************************************\n\n\n");
+printf("**********************************************************************\n           Hi, I am Hex.Checker v2.1, let me help you. \n           Oh and by the way, check my BIO \n           (check Information folder)\n**********************************************************************\n\n\n");
 
 
 
@@ -70,7 +71,8 @@ if (checker == 1)
     scanf("%x", &x);
     printf ("Enter second value\n");
     scanf("%x", &y);
-    printf ("The addition between: %2X and %2X = %2X\n\n\n", x,y,x+y);
+    printf ("The addition between: %2X and %2X =");
+    printf (" %2X\n\n\n", x,y,x+y);
 
     int w;
     printf("Do you want me to move back to the menu of the program? \n1 - YES(Back to the main menu)\n2 - NO(I ended up my work)\n3 - I want to perform this operation again. [ADDITION]\n");
