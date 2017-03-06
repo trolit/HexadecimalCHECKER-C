@@ -6,14 +6,19 @@
 
 Pick an version you wish to use:
 
+
 Hexadecimal.CHECKER-C **[v1.0]**
 Availabe language: *ENG*
+
+
 Note: To use it **effectively** you need to overwrite variables in *.c file.
 
-Hexadecimal.CHECKER-C **[v2.1]**
+Hexadecimal.CHECKER-C  **[v2.1]**
 Available language: *ENG*, *PL*
 
+
 Note: To use it **effectively** run *.exe file and simply tell the program numbers you wish to add/divide etc.. using the method shown on the screen.
+
 
 Note2: You don't need other files to make *.exe run. 
 
